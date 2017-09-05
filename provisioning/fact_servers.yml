@@ -1,0 +1,5 @@
+---
+- hosts: fact_servers
+  name: Fact servers playbook
+  roles:
+    - test_role

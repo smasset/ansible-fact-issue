@@ -1,0 +1,5 @@
+---
+- hosts: var_servers
+  name: Var servers playbook
+  roles:
+    - test_role

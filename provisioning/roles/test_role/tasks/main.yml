@@ -1,0 +1,12 @@
+---
+- name: Debug fact_or_var value before
+  debug:
+    var: fact_or_var
+
+- name: Set fact from fact_or_var
+  set_fact:
+    fact_or_var: "{% for current in fact_or_var %} {{current.name}} + ',' {% endfor %}"
+
+- name: Debug fact_or_var value after
+  debug:
+    var: fact_or_var

@@ -1,0 +1,6 @@
+---
+- hosts: all
+  name: Main playbook
+
+- include: fact_servers.yml
+- include: var_servers.yml
